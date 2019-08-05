@@ -13,7 +13,7 @@ This command mounts your current working directory to the working directory in t
 
 After pulling the image and initializing it, we can start a rasa/rasa container. Simple execute the following command. 
 
-``` docker run -dp 5005:5005  -v "$(pwd)"/models:/app/models   rasa/rasa --enable-api```
+``` docker run -dp 5005:5005  -v "$(pwd)"/models:/app/models   rasa/rasa run --enable-api```
 
 
 2. After setting up the rasa container, we can start to training through either RasaUI (From step 2 on rasaUI docker hub page) or through the command line. The above instructions are sufficient to utilize RasaUI. The following content is to explain the important training files and their purposes.
